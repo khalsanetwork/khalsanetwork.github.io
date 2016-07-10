@@ -26,40 +26,6 @@ a {
 /*******************************************
  NAVIGATION
  *******************************************/
-/*Added from Sample html/css page from w3 schools*/
-
-/* Remove the navbar's default margin-bottom and rounded borders */
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-}
-
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 450px}
-
-/* Set gray background color and 100% height */
-.sidenav {
-  padding-top: 20px;
-  background-color: #fff9e6;
-  height: 100%;
-}
-
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #555;
-  color: white;
-  padding: 15px;
-}
-
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-  .sidenav {
-    height: auto;
-    padding: 15px;
-  }
-  .row.content {height:auto;}
-}
-
 
 
 /*******************************************
@@ -100,34 +66,6 @@ footer {
 /* Links color */
 
 /* Images */
-img {
-	max-width: 100%;
-}
-
-@media screen and (min-width: 200px) {
-	.icons {
-		display: block;
-		max-width: 150px;
-		margin: 0 auto 40px;
-	}
-}
-
-@media screen and (min-width: 400px) {
-	.icons {
-		display: block;
-		max-width: 150px;
-		margin: 0 auto 40px;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-		.icons {
-		display: block;
-		max-width: 180px;
-		margin: 0 auto 30px;
-		/*border-radius: 100%;*/ /* Used to make picture round. */
-	}
-}
 
 /* Heading Color */
 
@@ -145,6 +83,18 @@ img {
 
 }
 
+#headings {
+	color: #204060;
+	font-size: 100px;
+}
+
+#heading1 {
+	font-size: 60px;
+}
+
+#heading2 {
+	font-size: 40px;
+}
 
 /* Paragraph Color */
 p {
