@@ -70,11 +70,22 @@ img {
 	max-width: 100%;
 }
 
-.icons {
-	display: block;
-	max-width: 250px;
-	margin: 0 auto 50px;
-	/*border-radius: 100%;*/ /* Used to make picture round. */
+@media screen and (min-width: 480px) {
+	.icons {
+		display: block;
+		max-width: 100px;
+		margin: 0 auto 30px;
+		/*border-radius: 100%;*/ /* Used to make picture round. */
+	}
+}
+
+@media screen and (min-width: 480px) {
+		.icons {
+		display: block;
+		max-width: 250px;
+		margin: 0 auto 30px;
+		/*border-radius: 100%;*/ /* Used to make picture round. */
+	}
 }
 
 /* Heading Color */
