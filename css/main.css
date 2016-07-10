@@ -74,21 +74,28 @@ img {
 	.icons {
 		display: block;
 		max-width: 100px;
-		margin: 0 auto 50px;
+		margin: 0 auto 30px;
 		/*border-radius: 100%;*/ /* Used to make picture round. */
 	}
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 660px) {
 		.icons {
 		display: block;
 		max-width: 250px;
-		margin: 0 auto 50px;
+		margin: 0 auto 40px;
 		/*border-radius: 100%;*/ /* Used to make picture round. */
 	}
 }
 
 /* Heading Color */
+
+#head-icon {
+	max-width: 300px;
+	/*max-height: 10px;*/
+	margin: 0 auto 50px;
+
+}
 
 #headings {
 	color: #204060;
