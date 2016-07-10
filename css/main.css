@@ -104,12 +104,19 @@ img {
 	max-width: 100%;
 }
 
+@media screen and (min-width: 200px) {
+	.icons {
+		display: block;
+		max-width: 150px;
+		margin: 0 auto 40px;
+	}
+}
+
 @media screen and (min-width: 400px) {
 	.icons {
 		display: block;
 		max-width: 150px;
 		margin: 0 auto 40px;
-		/*border-radius: 100%;*/ /* Used to make picture round. */
 	}
 }
 
