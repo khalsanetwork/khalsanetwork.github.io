@@ -54,6 +54,36 @@
         <!-- To Add Space -->
         <h1> </h1>
 
+
+        <button onclick="playAudio()" type="button" id="liveButton" class="btn btn-primary btn-lg btn-block">Click to Listen Live Kirtan from Harmandir Sahib, Amritsar</button>
+
+        <audio id="myAudio">
+        	<source src="http://sgpc.net:8070/live?type=.mp3" type="audio/mp3">
+        </audio>
+
+        <script>
+			var aud = document.getElementById("myAudio");
+
+			var elem = document.getElementById("liveButton");
+
+			function playAudio() {
+				if (elem.innerText == "Click to Listen Live Kirtan from Harmandir Sahib, Amritsar") {
+				    aud.play();
+				    elem.innerText = "Pause";
+				}
+				else {
+					aud.pause();	
+					elem.innerText = "Click to Listen Live Kirtan from Harmandir Sahib, Amritsar";
+				}
+			}
+			function pauseAudio() {
+			    aud.pause();
+			}
+		</script>
+
+        <!-- To Add Space -->
+        <h1> </h1>
+
         <div class="row">
           <div class="col-xs-6 col-md-3">
               <a href="japJiSahib.html">
@@ -103,7 +133,7 @@
     <div class="col-sm-2 sidenav side-icons">
       <img src="img/NishanSahib.gif" alt="Nishaan Sahib" >
     </div>
-    
+
   </div>
 </div>
 
