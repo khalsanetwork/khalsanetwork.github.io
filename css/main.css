@@ -108,7 +108,7 @@ img {
 	.icons {
 		display: block;
 		max-width: 150px;
-		margin: 0 auto 30px;
+		margin: 0 auto 40px;
 		/*border-radius: 100%;*/ /* Used to make picture round. */
 	}
 }
