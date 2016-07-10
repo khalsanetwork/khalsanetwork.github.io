@@ -70,7 +70,7 @@ img {
 	max-width: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 500px) {
 	.icons {
 		display: block;
 		max-width: 100px;
@@ -82,7 +82,7 @@ img {
 @media screen and (min-width: 660px) {
 		.icons {
 		display: block;
-		max-width: 250px;
+		max-width: 200px;
 		margin: 0 auto 30px;
 		/*border-radius: 100%;*/ /* Used to make picture round. */
 	}
