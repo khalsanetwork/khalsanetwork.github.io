@@ -104,16 +104,16 @@ img {
 	max-width: 100%;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
 	.icons {
 		display: block;
-		max-width: 100px;
+		max-width: 150px;
 		margin: 0 auto 30px;
 		/*border-radius: 100%;*/ /* Used to make picture round. */
 	}
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1200px) {
 		.icons {
 		display: block;
 		max-width: 200px;
@@ -133,7 +133,7 @@ img {
 
 #side-icons {
 	max-width: 100px;
-	max-height: 10px;
+	/*max-height: 10px;*/
 	margin: 0 auto 10px;
 
 }
