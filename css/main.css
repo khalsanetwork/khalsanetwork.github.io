@@ -26,6 +26,39 @@ a {
 /*******************************************
  NAVIGATION
  *******************************************/
+/*Added from Sample html/css page from w3 schools*/
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #fff9e6;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
 
 
 
@@ -37,8 +70,9 @@ footer {
 	font-size: 0.70em;
 	text-align: center;
 	clear: both; /* make the footer separate than section */
-	padding-top: 50px;
+	padding-top: 10px;
 	color: #ccc;
+	background-color: #fff9e6;
 }
 
 
@@ -79,7 +113,7 @@ img {
 	}
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 500px) {
 		.icons {
 		display: block;
 		max-width: 200px;
@@ -94,6 +128,13 @@ img {
 	max-width: 300px;
 	/*max-height: 10px;*/
 	margin: 0 auto 30px;
+
+}
+
+#side-icons {
+	max-width: 100px;
+	max-height: 10px;
+	margin: 0 auto 10px;
 
 }
 
