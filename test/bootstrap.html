@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<button type="button" id="bookmarkme" class="btn btn-info">
+<a href="#" rel="sidebar" title="bookmark this page">Bookmark This Page</a>
+</button>
+
+<script type="text/javascript">
+    $(function() {
+        $('#bookmarkme').click(function() {
+            if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
+                window.sidebar.addPanel(document.title,window.location.href,'');
+            } else if(window.external && ('AddFavorite' in window.external)) { // IE Favorite
+                window.external.AddFavorite(location.href,document.title); 
+            } else if(window.opera && window.print) { // Opera Hotlist
+                this.title=document.title;
+                return true;
+            } else { // webkit - safari/chrome
+                alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
+            }
+        });
+    });
+</script>
+
+
+
+
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Just for Learning
+</div>
+
+ <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+
+  <div class="alert alert-info fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Look!</strong> This one can be CLOSED.
+  </div>
+
+<div class="container">
+  <h2>iPhone</h2>
+  <a href="#demo" class="btn btn-info" data-toggle="collapse">iPhone Image</a>
+  <div id="demo" class="collapse">
+    <div class="container">
+<img class="img-responsive" src="http://d3d71ba2asa5oz.cloudfront.net/12015576/images/iphone-6-gold-front.jpg" class="img-circle img-thumbnail img-responsive" height = '500' width = '250' >
+</div>
+  </div>
+</div>
+
+
+ <ul class="list-group">
+  <li class="list-group-item list-group-item-info">Second item</li>
+  <li class="list-group-item list-group-item-warning">Third item</li>
+  <li class="list-group-item list-group-item-success">First item</li>
+  <li class="list-group-item list-group-item-danger">Fourth item</li>
+</ul>
+
+<div class="container">
+  <h2>Contextual Classes</h2>
+  <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>            
+  <div class="table-responsive">
+  <table class="table table-striped table-hover table-bordered">
+    <thead>
+      <tr class="text-warning danger">
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="danger">
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="info">
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</body>
+</html>
