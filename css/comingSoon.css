@@ -1,0 +1,43 @@
+		body { 
+		background: #232323;
+		margin: 0;
+		padding: 0;
+		}
+
+		#head-logo {
+			font-family: 'Metal Mania', cursive;
+			font-size: 100px;
+			color: #FE9A2E;
+		}
+
+		/* Make HTML 5 elements display block-level for consistent styling */  
+		header, nav, article, section, aside, footer, address {  
+    	display: block;  
+		}
+
+		#paragraph {
+			font-family: 'News Cycle', sans-serif;
+			color: white;
+			font-size: 20px;
+			text-align: center;
+			margin: 15px 0 15px 20px;
+			/*text-transform: capitalize;*/
+		}
+		
+		h2 {
+			font-size: 40px;
+			font-family: 'News Cycle', sans-serif;
+			text-transform: uppercase;
+			color: white;
+			margin: 15px 0 15px 20px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		.construction {
+			display: block;
+			max-width: 300px;
+			margin: 0 auto 40px;
+		}
