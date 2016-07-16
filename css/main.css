@@ -17,19 +17,17 @@ a {
 	/*font-family: 'Cinzel Decorative', cursive;*/
 	font-family: 'Metal Mania', cursive;
 	font-size: 30px;
-	color: #FE9A2E;
+	color: #DC7633;
 
-}
-
-#nav-bar {
-	font-family: 'Cinzel Decorative', cursive;
-	font-size: 15px;
-	color: #FE9A2E;
 }
 
 #myNavbar {
-	color: white;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 15px;
+	color: #FE9A2E;
+
 }
+
 
 /*******************************************
  HEADING
