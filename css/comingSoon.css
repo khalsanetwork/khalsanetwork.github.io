@@ -15,18 +15,21 @@
     	display: block;  
 		}
 
-		#paragraph {
+/*		#paragraph {
 			font-family: 'News Cycle', sans-serif;
 			color: white;
 			font-size: 20px;
 			text-align: center;
 			margin: 15px 0 15px 20px;
-			/*text-transform: capitalize;*/
 		}
+*/
+
 		
 		h2 {
 			font-size: 40px;
-			font-family: 'News Cycle', sans-serif;
+			/*font-family: 'News Cycle', sans-serif;*/
+			font-family: 'Poiret One', cursive;
+			/*font-family: 'Bungee Shade', cursive;*/
 			text-transform: uppercase;
 			color: white;
 			margin: 15px 0 15px 20px;
