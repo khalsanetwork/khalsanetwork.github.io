@@ -57,18 +57,20 @@ a {
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 450px}
 
-/* Set gray background color and 100% height */
+
+
 .sidenav {
   padding-top: 20px;
-  background-color: #fff9e6;
+  /*background-color: #fff9e6;*/
+  background-color: FLORALWHITE;
   height: 100%;
 }
 
 /* Set black background color, white text and some padding */
 footer {
-  background-color: #555;
+  /*background-color: #555;*/
   color: white;
-  padding: 15px;
+  padding: 10px;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -91,8 +93,10 @@ footer {
 	text-align: center;
 	clear: both; /* make the footer separate than section */
 	padding-top: 10px;
-	color: #ccc;
-	background-color: #fff9e6;
+	/*color: ROSYBROWN;*/
+	color: SALMON;
+	/*background-color: #fff9e6;*/
+	background-color: FLORALWHITE;
 }
 
 @media screen and (max-width: 700px) {
@@ -195,7 +199,8 @@ p {
 
 /* Site Body color */
 body {
-	background-color: #fff9e6;
+	/*background-color: #fff9e6;*/
+	background-color: FLORALWHITE;
 	/*color: #999;*/
 }
 
