@@ -66,7 +66,7 @@ var state = 'pause';
 //     element.setAttribute('src', 'img/buttons/playButtonWhite.png');
 // }
 // function unhover(element) {
-//     element.setAttribute('src', 'img/buttons/playButtonCircle.png');
+//     element.setAttribute('src', 'img/buttons/playbutton.png');
 // }
 
 
@@ -204,8 +204,8 @@ currentElementAltText = document.getElementById(element.id).getAttribute('alt');
 
       else if (state == 'play') {
         state = 'pause';
-        element.setAttribute('src', 'img/buttons/playButtonCircle.png');
-        musicPlayerPlay.setAttribute('src', 'img/buttons/playButtonCircle.png');
+        element.setAttribute('src', 'img/buttons/playbutton.png');
+        musicPlayerPlay.setAttribute('src', 'img/buttons/playbutton.png');
         pauseAudio();
         unglowBox(element.id);
       }
@@ -215,7 +215,7 @@ currentElementAltText = document.getElementById(element.id).getAttribute('alt');
 
         // console.log(oldElementID);
         oldEle = document.getElementById(oldElementID)
-        oldEle.setAttribute('src', 'img/buttons/playButtonCircle.png');
+        oldEle.setAttribute('src', 'img/buttons/playbutton.png');
         if (state == 'pause') {
           state = 'play';
         } else {
