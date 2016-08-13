@@ -70,6 +70,30 @@
 }
 
 
+/**/
+
+#takhtCaption {
+
+    -webkit-animation: colorchange 1s infinite;
+    -webkit-animation-direction: alternate;
+
+}
+
+
+@-webkit-keyframes colorchange {
+    0% {
+        -webkit-text-stroke: 1px #DC7633;
+        letter-spacing: 0;
+    }
+    50% {
+        -webkit-text-stroke: 2px #DC7633;
+    }
+    100% {
+        -webkit-text-stroke: 4px #DC7633;
+        letter-spacing: 10px;
+    }
+}
+/**/
 
 
 /*.test1 {

@@ -73,7 +73,6 @@ var state = 'pause';
 function setAudioSource(ID) {
 
   switch (ID) {
-      case 'X':audioElement.setAttribute('src', harmandirSahib);
       case '1':audioElement.setAttribute('src', harmandirSahib);break;
       case '2':audioElement.setAttribute('src', hazurSahib);break;  
       case '3':audioElement.setAttribute('src', dukhNivaranSahibLudhiana);break;  
@@ -94,6 +93,7 @@ function setAudioSource(ID) {
       case '18':audioElement.setAttribute('src', harmandirSahib);break;  
       case '19':audioElement.setAttribute('src', harmandirSahib);break;  
       case '20':audioElement.setAttribute('src', harmandirSahib);break;  
+      case 'X':audioElement.setAttribute('src', harmandirSahib);break;
   }
   
 }
@@ -161,7 +161,7 @@ function glowBox(e_ID) {
 
   glowElement = getElementfromID(e_ID);
   // glowElement.setAttribute('style', 'box-shadow: 0 5px 25px 0 #004080, 0 20px 30px 0 #004080;');
-  glowElement.setAttribute('style', 'box-shadow:  0px 0px 74px 15px TURQUOISE;');
+  glowElement.setAttribute('style', 'background-color: #CCFFFF;');
 }
 
 
@@ -187,7 +187,7 @@ var currentElementAltText = document.getElementById('1').getAttribute('alt');
 function play(element) {
 
 
-currentElementAltText = document.getElementById(element.id).getAttribute('alt');
+  currentElementAltText = document.getElementById(element.id).getAttribute('alt');
    
     if (oldElementID == element.id || oldElementID == 0) {
 
@@ -233,7 +233,7 @@ currentElementAltText = document.getElementById(element.id).getAttribute('alt');
 $("#volume").slider({
     min: 0,
     max: 100,
-    value: 80,
+    value: 100,
     range: "min",
     animate: true,
     slide: function(event, ui) {

@@ -21,6 +21,7 @@
 	/*color: #DC7633;*/
     /*color: #839192;*/
     color: mistyrose;
+    -webkit-text-stroke: 2px #DC7633;
     /*text-shadow: 2px 2px BLUE;*/
     text-shadow: 8px 8px 10px lightsalmon;
 	font-size: 100px;
@@ -29,6 +30,8 @@
     width: 100%;
     text-align: center;
 }
+
+
 
 @media screen and (min-width: 1000px) {
     .takhtHeading {
