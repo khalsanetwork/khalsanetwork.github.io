@@ -62,14 +62,14 @@ a {
 .sidenav {
   padding-top: 20px;
   /*background-color: #fff9e6;*/
-  background-color: FLORALWHITE;
+  /*background-color: FLORALWHITE;*/
   height: 100%;
 }
 
 /* Set black background color, white text and some padding */
 footer {
   /*background-color: #555;*/
-  color: white;
+  /*color: white;*/
   padding: 10px;
 }
 
@@ -89,14 +89,15 @@ footer {
  *******************************************/
 
 footer {
-	font-size: 0.70em;
+	padding: 10px;
+	font-size: 0.10em;
 	text-align: center;
 	clear: both; /* make the footer separate than section */
 	padding-top: 10px;
 	/*color: ROSYBROWN;*/
-	color: SALMON;
+	
 	/*background-color: #fff9e6;*/
-	background-color: FLORALWHITE;
+	
 }
 
 @media screen and (max-width: 700px) {
@@ -104,6 +105,12 @@ footer {
 		font-size: 16px;
 
 	}
+}
+
+.main-footer {
+	color: SALMON;
+	/*background-color: FLORALWHITE;*/
+
 }
 
 /*******************************************
@@ -203,4 +210,17 @@ body {
 	background-color: FLORALWHITE;
 	/*color: #999;*/
 }
+
+
+body {
+    background-repeat: no-repeat;
+    background: FLORALWHITE; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(FLORALWHITE, WHITESMOKE, FLORALWHITE); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(FLORALWHITE, WHITESMOKE, FLORALWHITE); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(FLORALWHITE, WHITESMOKE, FLORALWHITE); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(FLORALWHITE, WHITESMOKE, FLORALWHITE); /* Standard syntax */
+} 
+
+
+
 

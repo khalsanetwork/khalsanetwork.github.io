@@ -33,12 +33,12 @@ a {
  *******************************************/
 
 footer {
-	font-size: 0.70em;
+	font-size: 0.30em;
 	text-align: center;
 	clear: both; /* make the footer separate than section */
 	padding-top: 10px;
 	color: #ccc;
-	background-color: #fff9e6;
+	/*background-color: #fff9e6;*/
 }
 
 
@@ -105,7 +105,15 @@ p {
 
 /* Site Body color */
 body {
-	background-color: #fff9e6;
+	/*background-color: #fff9e6;*/
 	/*color: #999;*/
 }
+
+.main-footer {
+	color: SALMON;
+	/*background-color: FLORALWHITE;*/
+
+}
+
+
 

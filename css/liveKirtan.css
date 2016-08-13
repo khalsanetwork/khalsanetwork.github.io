@@ -1,0 +1,354 @@
+#radioIcons {
+    /*max-height: 150px;*/
+    margin: 10px;
+}
+
+
+
+/* Flashing */
+
+.radioIcons:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 2s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Shine */
+/*#hover14 figure {
+    position: relative;
+}
+
+#hover14 figure:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+*/
+
+/*#a {
+    box-shadow: 0 5px 25px 0 PALEGREEN, 0 20px 30px 0 PALEGREEN;
+}*/
+
+.thumbnailImage {
+    max-height: 150px;
+    margin: 10px;
+}
+
+
+.radioImageSize {
+    height: 80px;
+    width: 100px;
+}
+
+
+
+
+/*.test1 {
+   background-color: PALEGREEN;
+}*/
+
+.radioHeading {
+    font-size: 20px;
+} /*Not Working */ 
+
+
+@media screen and (max-width: 2000px) {
+    .radioHeading {
+        position: absolute;
+        top: 25%;
+        right:40%;
+    }
+
+    .radioButton{
+        position: absolute;
+        top: 25%;
+        left: 67%;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .radioHeading {
+        position: absolute;
+        top: 20%;
+        right: 2%;
+    }
+
+    .radioButton{
+        position: absolute;
+        top: 25%;
+        left: 86%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .radioHeading {
+        position: absolute;
+        top: 20%;
+        right: 10%;
+    }
+
+    .radioButton{
+        position: absolute;
+        top: 25%;
+        left: 86%;
+
+    }
+
+}
+
+@media screen and (max-width: 1010px) {
+    .radioHeading {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+    }
+
+    .radioButton{
+        position: absolute;
+        top: 25%;
+        left: 86%;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .radioHeading {
+        font-size: 2em;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        font-size: 10px;
+    }
+
+    .radioButton{
+        position: absolute;
+        top: 25%;
+        left: 66%;
+        font-size: 3em;
+
+    }
+    
+    .fontSizeTest{
+
+        font-size: 2em;
+
+    }
+
+
+}
+
+
+
+/*VOLUME CONTROLLER*/
+/*
+#volumcontroller {
+    height: 35px;
+    width: 90px;
+}
+#volumcontroller div{
+    height:40px;
+}
+.volumecontrollerbar{
+    border-left:1px solid #222;
+    float:right;
+    width:3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius: 3px;
+    background-color: #4c4c4c;
+    cursor:pointer;
+}
+.volumecontrollerbar:hover{
+    background-color:#bcbcbc !important;
+}
+
+*/
+
+/*Slider*/
+
+#player {
+    width: 350px;
+    height: 50px;    
+/*     position: relative; */
+/*     margin: 0 auto; */
+/*     top: 150px; */
+/*     background:  */
+}
+
+#volume {
+    position: absolute;
+    left: 24px;
+    margin: 0 auto;
+    height:15px;
+    width: 300px;
+    background: url('http://iviewsource.com/exercises/audioslider/images/volume-empty.png') no-repeat left top;
+  border: none;
+  outline: none;
+}
+
+#volume .ui-slider-range-min {
+    height:15px;
+    width: 300px;
+    position: absolute;
+    background: url('http://iviewsource.com/exercises/audioslider/images/volume-full.png') no-repeat left top;
+  border: none;
+  outline: none;
+}
+
+#volume .ui-slider-handle {
+    width: 38px;
+    height:39px;
+    background: url('http://iviewsource.com/exercises/audioslider/images/volume-knob.png') no-repeat left top;
+    position: absolute;
+    margin-left: -15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
+
+
+/*player*/
+
+.main-player {
+    /*background-color: STEELBLUE;*/
+    /*background-color: #222;*/
+    color: #4FC3F7;
+    height: 100px;
+    /*box-shadow: 30px 20px 10px 5px AQUAMARINE;/* 10px 20px 30px 5px AQUAMARINE;*/
+    box-shadow: 0px 0px 50px 10px #004080;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left: 0px;
+}
+
+.main-player {
+    /*background-repeat: no-repeat;*/
+    background: FLORALWHITE; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(FLORALWHITE, WHITESMOKE, FLORALWHITE); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(FLORALWHITE, WHITESMOKE, FLORALWHITE); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(FLORALWHITE, WHITESMOKE, FLORALWHITE); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#111, #004080); /* Standard syntax */
+
+}
+
+/*Volume Slider*/
+.vol_slider {
+    position: absolute;
+    top: 45%;
+    left: 65%;
+}
+
+
+/*Moving Station Title Name*/
+.stationTitle {
+    position: absolute;
+    left: 38%; 
+    font-size: 30px;
+    top: 30px;
+    bottom: auto;
+    color: floralwhite;
+    height: 50px;
+    /*background-color: STEELBLUE;*/
+}
+
+.audioButtons {
+    max-height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 25%;
+
+
+}
+
+@media screen and (max-width: 1100px) {
+    .audioButtons {
+        max-height: 80px;
+        position: absolute;
+        left: 27%;
+        top: 15px;
+    }
+    .stationTitle {
+        position: absolute;
+        left: 45%; 
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .audioButtons {
+        max-height: 80px;
+        position: absolute;
+        left: 27%;
+        top: 0px;
+    }
+    .stationTitle {
+        position: absolute;
+        left: 45%; 
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .audioButtons {
+        max-height: 60px;
+        position: absolute;
+        top: 5px;
+        left: 10%;
+    }
+    .stationTitle {
+        position: absolute;
+        left: 35%; 
+        top: 5px;
+         height: 30px;
+    }
+
+    .main-player {
+        height: 90px;
+    }
+}
+
+
+
+
+
+/*test*/
+#testAudio {
+    width: 100%;
+}
