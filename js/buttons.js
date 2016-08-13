@@ -2,6 +2,12 @@
 
 var harmandirSahib = "http://sgpc.net:8070/live?type=.mp3";
 
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ harmandirSahib = "http://sgpc.net:8070/live16";
+}
+
+
 var dukhNivaranSahibLudhiana = "http://akalmultimedia.net:8000/GDNSLDH";
 
 var hazurSahib = "http://radio2.sikhnet.com:8038/live";
