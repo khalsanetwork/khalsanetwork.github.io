@@ -82,15 +82,15 @@
 
 @-webkit-keyframes colorchange {
     0% {
-        -webkit-text-stroke: 1px #DC7633;
+        -webkit-text-stroke: 1px PAPAYAWHIP;
         letter-spacing: 0;
     }
     50% {
         -webkit-text-stroke: 2px #DC7633;
     }
     100% {
-        -webkit-text-stroke: 4px #DC7633;
-        letter-spacing: 10px;
+        -webkit-text-stroke: 4px PAPAYAWHIP;
+        letter-spacing: 8px;
     }
 }
 /**/
