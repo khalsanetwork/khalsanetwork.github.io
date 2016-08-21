@@ -167,7 +167,10 @@ function glowBox(e_ID) {
 
   glowElement = getElementfromID(e_ID);
   // glowElement.setAttribute('style', 'box-shadow: 0 5px 25px 0 #004080, 0 20px 30px 0 #004080;');
-  glowElement.setAttribute('style', 'background-color: #CCFFFF;');
+  // glowElement.setAttribute('style', 'background-color: #CCFFFF;');
+
+glowElement.setAttribute('style', '-webkit-animation: glowing 3s ease-in-out infinite alternate;  -moz-animation: glowing 3s ease-in-out infinite alternate;  animation: glowing 3s ease-in-out infinite alternate;');
+
 }
 
 
@@ -190,47 +193,81 @@ var currentElementAltText = document.getElementById('1').getAttribute('alt');
 
 // onclick="play(document.getElementById('1'));"
 
+
+
+
+
+var nextElement = '2';
+
 function play(element) {
 
+  if (element == 'next') {
+
+    nextElement = parseInt(oldElementID) + 1;
+
+    if (document.getElementById(nextElement) == null) {
+      play(document.getElementById('1'));
+      return;
+    }
+    
+    play(document.getElementById(nextElement));
+    return;
+  }
+
+  if (element == 'previous') {
+
+    nextElement = parseInt(oldElementID) - 1;
+
+    if (document.getElementById(nextElement) == null) {
+      play(document.getElementById('8')); //Change this value '8' to the current last element ID, whenever new stations are added!!!
+      return;
+    }
+    
+    play(document.getElementById(nextElement));
+    return;
+  }
 
   currentElementAltText = document.getElementById(element.id).getAttribute('alt');
    
-    if (oldElementID == element.id || oldElementID == 0) {
+  if (oldElementID == element.id || oldElementID == 0) {
 
+    if (state == 'pause') {
+      state = 'play';
+      element.setAttribute('src', 'img/buttons/pauseButtonCircle.png');
+      element.setAttribute('style', 'animation: roll 3s infinite;');
+      musicPlayerPlay.setAttribute('src', 'img/buttons/pauseButtonCircle.png');
+      playAudio(element.id);
+      glowBox(element.id);
+      nowPlayingText.innerText = currentElementAltText;
+      musicPlayerPlay.setAttribute('onclick', "play(document.getElementById('" + element.id + "'));");
+      // nowPlayingText.innerText = 'Hello';
+    }
+
+    else if (state == 'play') {
+      state = 'pause';
+      element.setAttribute('src', 'img/buttons/playbutton.png');
+      musicPlayerPlay.setAttribute('src', 'img/buttons/playbutton.png');
+      element.setAttribute('style', '');
+      pauseAudio();
+      unglowBox(element.id);
+    }
+    oldElementID = element.id;
+
+  } else {
+
+      // console.log(oldElementID);
+      oldEle = document.getElementById(oldElementID)
+      oldEle.setAttribute('src', 'img/buttons/playbutton.png');
       if (state == 'pause') {
         state = 'play';
-        element.setAttribute('src', 'img/buttons/pauseButtonCircle.png');
-        musicPlayerPlay.setAttribute('src', 'img/buttons/pauseButtonCircle.png');
-        playAudio(element.id);
-        glowBox(element.id);
-        nowPlayingText.innerText = currentElementAltText;
-        musicPlayerPlay.setAttribute('onclick', "play(document.getElementById('" + element.id + "'));");
-        // nowPlayingText.innerText = 'Hello';
-      }
-
-      else if (state == 'play') {
+      } else {
         state = 'pause';
-        element.setAttribute('src', 'img/buttons/playbutton.png');
-        musicPlayerPlay.setAttribute('src', 'img/buttons/playbutton.png');
-        pauseAudio();
-        unglowBox(element.id);
       }
       oldElementID = element.id;
-
-    } else {
-
-        // console.log(oldElementID);
-        oldEle = document.getElementById(oldElementID)
-        oldEle.setAttribute('src', 'img/buttons/playbutton.png');
-        if (state == 'pause') {
-          state = 'play';
-        } else {
-          state = 'pause';
-        }
-        oldElementID = element.id;
-        unglowBox(oldElementID.id);
-        play(element);  
-    }
+      oldEle.setAttribute('style', '');
+      unglowBox(oldElementID.id);
+      play(element);  
+  }
 }
 
 

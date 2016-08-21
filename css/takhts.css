@@ -20,17 +20,23 @@
 #takhtCaption {
 	/*color: #DC7633;*/
     /*color: #839192;*/
-    color: mistyrose;
-    -webkit-text-stroke: 2px #DC7633;
+    /*color: mistyrose;*/
+    /*-webkit-text-stroke: 2px #DC7633;*/
     /*text-shadow: 2px 2px BLUE;*/
-    text-shadow: 8px 8px 10px lightsalmon;
-	font-size: 90px;
+    /*text-shadow: 8px 8px 10px lightsalmon;*/
+	/*font-size: 90px;*/
     position: absolute;
-    top: 70%;
-    width: 100%;
-    text-align: center;
+    top: 30%;
+    width: 500px;
+    right: 35%;
+    /*text-align: center;*/
 }
 
+#takhtCaption {
+  /*-webkit-filter: drop-shadow(0px 0px 20px lightsalmon);*/
+  -webkit-filter: drop-shadow(0px 0px 10px RED);
+  filter: drop-shadow(0px 0px 30px RED);
+}
 
 
 @media screen and (min-width: 1000px) {

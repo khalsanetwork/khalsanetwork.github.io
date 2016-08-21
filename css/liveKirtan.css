@@ -32,6 +32,19 @@
 
 
 
+/*Rotate Image:*/
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 
 /* Shine */
 /*#hover14 figure {
@@ -71,7 +84,7 @@
 
 
 /**/
-
+/*
 #takhtCaption {
 
     -webkit-animation: colorchange 1s infinite;
@@ -92,7 +105,7 @@
         -webkit-text-stroke: 4px PAPAYAWHIP;
         letter-spacing: 8px;
     }
-}
+}*/
 /**/
 
 
@@ -186,7 +199,7 @@
 
     }
     
-    .fontSizeTest{
+    .fontSizeText{
 
         font-size: 1.5em;
 
@@ -321,6 +334,17 @@
 
 }
 
+#takhtCaption {
+    max-width: 600px;
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+} 
+
+
 @media screen and (max-width: 1100px) {
     .audioButtons {
         max-height: 80px;
@@ -340,7 +364,7 @@
         max-height: 80px;
         position: absolute;
         left: 27%;
-        top: 0px;
+        top: 15px;
     }
     .stationTitle {
         position: absolute;
@@ -350,11 +374,15 @@
 }
 
 @media screen and (max-width: 700px) {
+    #takhtCaption {
+        max-width: 350px;
+    }    
     .audioButtons {
         max-height: 60px;
         position: absolute;
-        top: 0px;
-        left: -5%;
+        top: 20px;
+        left: 14px;
+        /*right: 5px;*/
     }
     .stationTitle {
         position: absolute;
@@ -369,6 +397,16 @@
 }
 
 
+/*Used for glowing text (used in JAVASCRIPT)*/
+@-webkit-keyframes glowing {
+  from {
+    background-color: #CCFFFF;
+  }
+  to {
+    background-color: SKYBLUE;
+    /*color: white;*/
+  }
+}
 
 
 
