@@ -191,6 +191,10 @@ var oldElementID = 0;
 
 var currentElementAltText = document.getElementById('1').getAttribute('alt');
 
+var albumArt = document.getElementById('albumArt');
+
+var currentAlbumArt = 0;
+
 // onclick="play(document.getElementById('1'));"
 
 
@@ -228,6 +232,7 @@ function play(element) {
   }
 
   currentElementAltText = document.getElementById(element.id).getAttribute('alt');
+  currentAlbumArt = document.getElementById(element.id).getAttribute('art');
    
   if (oldElementID == element.id || oldElementID == 0) {
 
@@ -239,6 +244,7 @@ function play(element) {
       playAudio(element.id);
       glowBox(element.id);
       nowPlayingText.innerText = currentElementAltText;
+      albumArt.setAttribute('src', currentAlbumArt);
       musicPlayerPlay.setAttribute('onclick', "play(document.getElementById('" + element.id + "'));");
       // nowPlayingText.innerText = 'Hello';
     }

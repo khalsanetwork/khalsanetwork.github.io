@@ -100,8 +100,7 @@ function setAudioSource(ID) {
       case '19':audioElement.setAttribute('src', harmandirSahib);break;  
       case '20':audioElement.setAttribute('src', harmandirSahib);break;  
       case 'X':audioElement.setAttribute('src', harmandirSahib);break;
-  }
-  
+  } 
 }
 
 
@@ -160,6 +159,9 @@ function getElementfromID(ID) {
 // Now Playing Text
 var nowPlayingText = document.getElementById('nowPlaying');
 
+var albumArt = document.getElementById('albumArt');
+
+var currentAlbumArt = 0;
 
 var glowElement = document.getElementById('a');
 
@@ -228,6 +230,7 @@ function play(element) {
   }
 
   currentElementAltText = document.getElementById(element.id).getAttribute('alt');
+  currentAlbumArt = document.getElementById(element.id).getAttribute('art');
    
   if (oldElementID == element.id || oldElementID == 0) {
 
@@ -239,6 +242,7 @@ function play(element) {
       playAudio(element.id);
       glowBox(element.id);
       nowPlayingText.innerText = currentElementAltText;
+      albumArt.setAttribute('src', currentAlbumArt);
       musicPlayerPlay.setAttribute('onclick', "play(document.getElementById('" + element.id + "'));");
       // nowPlayingText.innerText = 'Hello';
     }
