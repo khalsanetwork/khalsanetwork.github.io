@@ -278,6 +278,16 @@ function play(element) {
 
 
 
+function fastForward() {
+  audioElement.currentTime = audioElement.currentTime + 10;
+}
+
+
+function rewind() {
+  audioElement.currentTime = audioElement.currentTime - 10;
+}
+
+
 // Volume Slider
 $("#volume").slider({
     min: 0,
