@@ -337,17 +337,17 @@
     left: 25%;
 */
 
-        position: absolute;
-        top: 55px;
+    position: absolute;
+    top: 55px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 
 #takhtCaption {
-    max-width: 600px;
+    max-width: 500px;
     position: absolute;
-    top: 320px;
+    top: 250px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);

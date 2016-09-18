@@ -1,10 +1,11 @@
 #carouselImage {
     /*width: 150px;*/
-    max-height: 400px;
+    max-height: 350px;
     background-image: url(../img/harmandirSahib.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    box-shadow: 0 0 35px 15px white inset;
 
 }
 
@@ -34,8 +35,8 @@
 
 #takhtCaption {
   /*-webkit-filter: drop-shadow(0px 0px 20px lightsalmon);*/
-  -webkit-filter: drop-shadow(0px 0px 10px RED);
-  filter: drop-shadow(0px 0px 30px RED);
+  -webkit-filter: drop-shadow(0px 0px 10px gold);
+  filter: drop-shadow(0px 0px 10px gold);
 }
 
 
