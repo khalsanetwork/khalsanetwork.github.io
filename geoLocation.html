@@ -24,7 +24,7 @@ function showPosition(position) {
 
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
     +latlon+"&zoom=14&size=400x300&maptype=roadmap&key=AIzaSyBft3F6K5PxBaF8CZAq-8X_Cuedw87PU6Y";
-    document.getElementById("mapholder").innerHTML = "<iframe src='"+img_url+"'> </iframe>";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
 
 function showError(error) {
