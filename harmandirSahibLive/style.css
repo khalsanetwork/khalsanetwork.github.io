@@ -1,5 +1,5 @@
-body {
-
+.mainDiv {
+	position: fixed;
 	height: 100%;
 	width: 100%;
 	background: FLORALWHITE;
@@ -8,13 +8,16 @@ body {
     background-position: 50% 10%;
     background-color: #40567f;
 
-	-webkit-background-size: 200%;
+/*	-webkit-background-size: 200%;
 	-moz-background-size: 200%;
 	-o-background-size: 200%;
-	background-size: 200%;
+	background-size: 200%;*/
 
 }
 
+/*.mainDiv {
+	height: 100%;
+}*/
 #titleimg {
 	margin-top: -150px;
 	width: 70%;

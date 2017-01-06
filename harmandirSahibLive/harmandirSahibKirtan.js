@@ -54,14 +54,17 @@ $(function() {
 	var url = getLiveAudioURL();
 	$('#mainAudio').attr("src", url);
 	var audio = document.getElementById('mainAudio');
-	audio.load();
-	setCurrentTime();
+	// audio.play();
+	// setTimeout(audio.pause(), 3500);
+	audio.pause();
+	// setCurrentTime();
 });
 
 function playLiveAudio() {
 	// var url = getLiveAudioURL();
 	// $('#mainAudio').attr("src", url);
 	// var audio = $('#mainAudio');
+	setCurrentTime();
 	play();
 	// glowBox('playImage');
 	// $('#playImage').attr('style', 'animation: roll 3s infinite;');
