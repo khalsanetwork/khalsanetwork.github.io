@@ -28,16 +28,32 @@ function getLiveAudioURL() {
 	return initURL + year + '/' + monthName + '/' + 'recorded' + dateforURL + '%20%281%29.mp3';
 }
 
+var playing = false;
+
+function play() {
+	var audio = document.getElementById('mainAudio');
+	if (!playing) {
+		audio.play();
+		setCurrentTime();
+		$('.audioButtons').show();
+		$('#playButton').attr('src', '../img/buttons/pauseButtonCircle.png');
+		playing = true;
+	}
+	else {
+		// setTimeout(audio.pause(), 100);
+		audio.pause();
+		$('.audioButtons').hide();
+		$('#playButton').attr('src', '../img/buttons/playbutton.png');
+		playing = false;
+	}
+}
+
 function playLiveAudio() {
 	var url = getLiveAudioURL();
 	$('#mainAudio').attr("src", url);
 	// var audio = $('#mainAudio');
-	var audio = document.getElementById('mainAudio');
-	audio.play();
-	setCurrentTime();
-	glowBox('playImage');
-	$('.audioButtons').show();
-	$('.playButton').attr('style', 'opacity: 1;');
+	play();
+	// glowBox('playImage');
 	// $('#playImage').attr('style', 'animation: roll 3s infinite;');
 	// audio.currentTime = 45000;
 }
@@ -80,5 +96,4 @@ function glowBox(e_ID) {
   glowElement.setAttribute('style', '-webkit-animation: glowing 3s ease-in-out infinite alternate;  -moz-animation: glowing 3s ease-in-out infinite alternate;  animation: glowing 3s ease-in-out infinite alternate;');
 
 }
-
 

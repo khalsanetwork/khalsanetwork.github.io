@@ -35,29 +35,11 @@ button {
 	z-index: -1;
 }
 
-.controlDiv {
-	max-width: 50%;
-
-}
-.playImage {
-	max-width: 30%;
-	margin-top: 10%;
-	opacity: 0.8;
-	position: absolute;
-	top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    box-shadow: 0px 0px 100px 40px rgba(255, 255, 255,0.7);
-}
-
-
 .playButton {
 	max-width: 30%;
 	margin-top: 10%;
 	opacity: 0.5;
-	position: absolute;
+	position: fixed;
 	top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -103,7 +85,7 @@ button {
 
 @media screen and (max-width: 700px) {
 	body {
-		background-size: 400%;
+		background-size: 500%;
 	}
 
 	#titleimg {
@@ -121,27 +103,4 @@ button {
 		position: fixed;
 		top: 40%;
 	}
-}
-
-/*Used for glowing text (used in JAVASCRIPT)*/
-@-webkit-keyframes glowing {
-  from {
-    box-shadow: 0px 0px 100px 40px rgba(255, 255, 255,0.7);
-  }
-  to {
-    box-shadow: 0px 0px 100px 40px rgba(64, 224, 208,0.7);
-    /*color: white;*/
-  }
-}
-
-
-/*Rotate Image:*/
-
-@keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
