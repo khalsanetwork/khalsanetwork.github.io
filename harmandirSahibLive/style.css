@@ -6,12 +6,6 @@
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-color: #40567f;
-    /*z-index: -1;*/
-/*	-webkit-background-size: 200%;
-	-moz-background-size: 200%;
-	-o-background-size: 200%;
-	background-size: 200%;*/
-
 }
 
 #titleimg {
@@ -30,29 +24,23 @@ h1 {
 audio {
 	display: none;
 }
-button {
-	text-align: center;
-}
-
-
-#blur {
-	position: fixed;
-	height: 100%;
+.controlls {
 	width: 100%;
-	background-color: STEELBLUE;
-	opacity: 0.3;
-	z-index: -1;
+	position: fixed;
+    left: 50%;
+    top: 70%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .playButton {
 	max-width: 40%;
-	margin-top: 10%;
 	opacity: 0.5;
-	position: fixed;
-	top: 50%;
+	/*position: relative;
     left: 50%;
+    bottom: 0px;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
 }
 
 .playButton:hover {
@@ -79,9 +67,8 @@ button {
 }
 
 .audioButtons {
-	max-width: 200px;
-	position: fixed;
-	top: 60%;
+	max-width: 20%;
+	bottom: 50px;
 }
 
 .leftButton {
@@ -92,19 +79,9 @@ button {
 	right: 10%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 	.mainDiv {
-		height: 200%;
+		height: 100%;
 	}
-	#titleimg {
-	margin-top: 10px;
-	width: 90%;
-	}
-	.playButton {
-		/*margin-top: 10%;*/
-	}
-	.audioButtons {
-		max-width: 30px;
-		top: 50%;
-	}
+
 }
