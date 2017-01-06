@@ -1,0 +1,147 @@
+body {
+
+	height: 100%;
+	width: 100%;
+	background: FLORALWHITE;
+    background-image: url(../img/harmandirSahib.JPG);
+    background-repeat: repeat-y;
+    background-position: 50% 10%;
+    background-color: #40567f;
+
+}
+
+#titleimg {
+	margin-top: -150px;
+	width: 70%;
+}
+
+h1 {
+	text-align: center;
+}
+audio {
+	display: none;
+}
+button {
+	text-align: center;
+}
+
+
+#blur {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: STEELBLUE;
+	opacity: 0.3;
+	z-index: -1;
+}
+
+.controlDiv {
+	max-width: 50%;
+
+}
+.playImage {
+	max-width: 30%;
+	margin-top: 10%;
+	opacity: 0.8;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 100px 40px rgba(255, 255, 255,0.7);
+}
+
+
+.playButton {
+	max-width: 30%;
+	margin-top: 10%;
+	opacity: 0.5;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.playButton:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.audioButtons {
+	max-width: 200px;
+	position: fixed;
+	top: 60%;
+}
+
+.leftButton {
+	left: 10%;
+}
+
+.rightButton {
+	right: 10%;
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		background-size: 400%;
+	}
+
+	#titleimg {
+	margin-top: 0px;
+	width: 90%;
+	}
+	.playImage {
+		margin-top: -10%;
+	}
+	.playButton {
+		margin-top: -10%;
+	}
+	.audioButtons {
+		max-width: 100px;
+		position: fixed;
+		top: 40%;
+	}
+}
+
+/*Used for glowing text (used in JAVASCRIPT)*/
+@-webkit-keyframes glowing {
+  from {
+    box-shadow: 0px 0px 100px 40px rgba(255, 255, 255,0.7);
+  }
+  to {
+    box-shadow: 0px 0px 100px 40px rgba(64, 224, 208,0.7);
+    /*color: white;*/
+  }
+}
+
+
+/*Rotate Image:*/
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
