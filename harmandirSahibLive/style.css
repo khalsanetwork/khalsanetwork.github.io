@@ -4,9 +4,14 @@ body {
 	width: 100%;
 	background: FLORALWHITE;
     background-image: url(../img/harmandirSahib.JPG);
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-position: 50% 10%;
     background-color: #40567f;
+
+	-webkit-background-size: 200%;
+	-moz-background-size: 200%;
+	-o-background-size: 200%;
+	background-size: 200%;
 
 }
 

@@ -48,6 +48,12 @@ function play() {
 	}
 }
 
+$(function() {
+	var url = getLiveAudioURL();
+	$('#mainAudio').attr("src", url);
+	play();
+});
+
 function playLiveAudio() {
 	var url = getLiveAudioURL();
 	$('#mainAudio').attr("src", url);
@@ -84,9 +90,9 @@ function backward() {
 
 $(function() {
 	$('#titleimg').hide();
-	$('.audioButtons').hide();
+	// $('.audioButtons').hide();
 	$('#titleimg').show('slow');
-})
+});
 
 
 function glowBox(e_ID) {
