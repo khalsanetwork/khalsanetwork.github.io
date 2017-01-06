@@ -97,16 +97,12 @@ button {
 	.mainDiv {
 		/*height: 200%;*/
 	}
-
 	#titleimg {
 	margin-top: 10px;
 	width: 90%;
 	}
-	.playImage {
-		margin-top: -10%;
-	}
 	.playButton {
-		margin-top: -10%;
+		/*margin-top: 10%;*/
 	}
 	.audioButtons {
 		max-width: 40px;
