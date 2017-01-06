@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-position: 50% 10%;
     background-color: #40567f;
-
+    z-index: -1;
 /*	-webkit-background-size: 200%;
 	-moz-background-size: 200%;
 	-o-background-size: 200%;
@@ -15,12 +15,14 @@
 
 }
 
-/*.mainDiv {
-	height: 100%;
-}*/
 #titleimg {
-	margin-top: -150px;
+	position: fixed;
 	width: 70%;
+	top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
 }
 
 h1 {
@@ -93,7 +95,7 @@ button {
 
 @media screen and (max-width: 700px) {
 	.mainDiv {
-		height: 150%;
+		height: 200%;
 	}
 
 	#titleimg {
