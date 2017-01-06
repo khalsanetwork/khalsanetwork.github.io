@@ -36,7 +36,7 @@ button {
 }
 
 .playButton {
-	max-width: 30%;
+	max-width: 40%;
 	margin-top: 10%;
 	opacity: 0.5;
 	position: fixed;
@@ -99,8 +99,7 @@ button {
 		margin-top: -10%;
 	}
 	.audioButtons {
-		max-width: 100px;
-		position: fixed;
-		top: 40%;
+		max-width: 80px;
+		top: 30%;
 	}
 }
