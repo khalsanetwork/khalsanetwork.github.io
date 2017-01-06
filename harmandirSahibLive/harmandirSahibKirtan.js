@@ -31,16 +31,18 @@ function getLiveAudioURL() {
 var playing = false;
 
 function play() {
+	console.log('Playing');
 	var audio = document.getElementById('mainAudio');
+	// setCurrentTime();
 	if (!playing) {
 		audio.play();
-		setCurrentTime();
 		$('.audioButtons').show();
 		$('#playButton').attr('src', '../img/buttons/pauseButtonCircle.png');
 		playing = true;
 	}
 	else {
 		// setTimeout(audio.pause(), 100);
+		console.log('Paused');
 		audio.pause();
 		$('.audioButtons').hide();
 		$('#playButton').attr('src', '../img/buttons/playbutton.png');
@@ -51,12 +53,14 @@ function play() {
 $(function() {
 	var url = getLiveAudioURL();
 	$('#mainAudio').attr("src", url);
-	play();
+	var audio = document.getElementById('mainAudio');
+	audio.load();
+	setCurrentTime();
 });
 
 function playLiveAudio() {
-	var url = getLiveAudioURL();
-	$('#mainAudio').attr("src", url);
+	// var url = getLiveAudioURL();
+	// $('#mainAudio').attr("src", url);
 	// var audio = $('#mainAudio');
 	play();
 	// glowBox('playImage');
@@ -73,7 +77,7 @@ function setCurrentTime() {
 
 	var time = (currentHour * 3600) + (currentMin * 60);
 	console.log('Time: ' + time);
-	audio.currentTime += time;
+	audio.currentTime = time;
 }
 
 function forward() {
@@ -90,7 +94,7 @@ function backward() {
 
 $(function() {
 	$('#titleimg').hide();
-	// $('.audioButtons').hide();
+	$('.audioButtons').hide();
 	$('#titleimg').show('slow');
 });
 

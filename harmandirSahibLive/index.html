@@ -28,7 +28,7 @@
     <div class="mainDiv container">
 
       <div class="img-responsive text-center">
-        <img class="" id="titleimg" src="../img/liveKirtan.png" alt="Live Kirtan" >
+        <img class="" id="titleimg" src="../img/liveKirtan.png" alt="Live Kirtan" onClick="setCurrentTime();">
     </div>
 
     <audio id="mainAudio">
@@ -37,11 +37,9 @@
 
         <div class="">
             <img class="audioButtons leftButton" src="../img/buttons/previous.png" id="previous" onClick="backward();">
-        </div>
-        <div class="">
+
             <img id="playButton" class="playButton" src="../img/buttons/playbutton.png" onClick="playLiveAudio();">
-        </div>
-        <div class="">
+
             <img class="audioButtons rightButton" src="../img/buttons/next.png" id="next" onClick="forward();">
         </div>
 

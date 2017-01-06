@@ -94,7 +94,7 @@ button {
 	}
 
 	#titleimg {
-	margin-top: 0px;
+	margin-top: 10px;
 	width: 90%;
 	}
 	.playImage {
@@ -105,6 +105,6 @@ button {
 	}
 	.audioButtons {
 		max-width: 80px;
-		top: 30%;
+		top: 50%;
 	}
 }
