@@ -78,7 +78,7 @@ function setCurrentTime() {
 	var currentHour = date.getHours();
 	var currentMin = date.getMinutes();
 
-	var time = (currentHour * 3600) + (currentMin * 60);
+	var time = (currentHour * 3600) + (currentMin * 60) - (4 * 3600);
 	console.log('Time: ' + time);
 	audio.currentTime = time;
 }
