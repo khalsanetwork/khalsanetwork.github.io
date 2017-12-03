@@ -1,1 +1,1 @@
-# amandeepsingh.github.io
+# [KhalsaNetwork.github.io](khalsanetwork.github.io)
