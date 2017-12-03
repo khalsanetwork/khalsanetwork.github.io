@@ -25,7 +25,7 @@ var initURL = "http://new.sgpc.net/kirtan/";
 // var audio = document.getElementById('mainAudio');
 
 function getLiveAudioURL() {
-	return initURL + year + '/' + monthName + '/' + 'recorded' + dateforURL + '%20%281%29.mp3';
+	return initURL + year + '/' + month + '/' + 'recorded' + dateforURL + '%20%281%29.mp3';
 }
 
 var playing = false;
