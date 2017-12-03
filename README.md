@@ -1,1 +1,1 @@
-# [KhalsaNetwork.github.io](khalsanetwork.github.io)
+# [KhalsaNetwork.github.io](https://khalsanetwork.github.io)
